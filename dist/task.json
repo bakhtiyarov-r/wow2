@@ -1,0 +1,101 @@
+{
+  "task": [
+    {
+      "ID": 1234,
+      "city_name": "Самара",
+      "task_name": "один Lorem Ipsum является стандартной 'рыбой' для текстов на латинице с начала XVI века.",
+      "deadline": "13 Августа",
+      "sum": "1345 Р",
+       "filter":
+      {
+        "personal": true,
+        "night":false,
+        "immediate": true
+      },
+      "status":
+      {
+        "new": false,
+        "onthe_go": false,
+        "under_consideration": false,
+        "done": false,
+        "canceled": false,
+        "drafts": true
+      }
+     
+    },
+
+    {
+      "ID": "1234",
+      "city_name": "Москва",
+      "task_name": "два Lorem Ipsum является стандартной 'рыбой' для текстов на латинице с начала XVI века.",
+      "deadline": "14 Августа",
+      "sum": "1345 Р",
+       "filter":
+      {
+        "personal": false,
+        "night":true,
+        "immediate": true
+      },
+      "status":
+      {
+        "new": true,
+        "onthe_go": true,
+        "under_consideration": false,
+        "done": false,
+        "canceled": false,
+        "drafts": false
+      }
+      
+     
+    },
+
+    {
+      "ID": "1236",
+      "city_name": "Самара",
+      "task_name": "три Lorem Ipsum является стандартной 'рыбой' для текстов на латинице с начала XVI века.",
+      "deadline": "18 Августа",
+      "sum": "2545 Р",
+       "filter":
+      {
+        "personal": true,
+        "night":false,
+        "immediate": false
+      },
+      "status":
+      {
+        "new": true,
+        "onthe_go": false,
+        "under_consideration": false,
+        "done": false,
+        "canceled": true,
+        "drafts": false
+      }
+      
+    
+    },
+
+    {
+      "ID": "1237",
+      "city_name": "Самара",
+      "task_name": "четыре Lorem Ipsum является стандартной 'рыбой' для текстов на латинице с начала XVI века.",
+      "deadline": "24 Августа",
+      "sum": "135 Р",
+       "filter":
+      {
+        "personal": true,
+        "night":false,
+        "immediate": true
+      },
+      "status":
+      {
+        "new": true,
+        "onthe_go": false,
+        "under_consideration": true,
+        "done": false,
+        "canceled": false,
+        "drafts": false
+      }
+     
+    }
+  ]
+}

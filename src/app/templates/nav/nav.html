@@ -1,0 +1,35 @@
+<header>
+	<div class="container header">
+	<div class="row">
+	<div class="col-lg-7">
+	    <div class="logo">
+	       <a href="#">taskon</a>
+	    </div>
+	    <div class="menu">		
+		<a class="menu_item" routerLinkActive="menu_item__active" routerLink="/" [routerLinkActiveOptions]="{exact:true}">Задания</a>
+		<a class="menu_item" routerLinkActive="menu_item__active" routerLink="/finance">Финансы</a>
+		<a class="menu_item" routerLinkActive="menu_item__active" routerLink="/company">Компания</a>
+		<a class="menu_item" routerLinkActive="menu_item__active" routerLink="/statistic">Статистика</a>
+		</div>	
+    </div>
+    <div class="col-lg-5">
+	    <div class="user">
+			<div class="user_balance">
+			   <span>Баланс</span>&nbsp;&nbsp;
+			   <a routerLink="/balance">218 982, 90 </a>
+			</div>
+			<div class="user_notification">
+				<a href="#"><img src="../../assets/ic-notifications-black-24-px.png"></a>
+			</div>
+			<div class="user_name">
+				<a href="#">Никита Ласточкин&nbsp;&nbsp;</a>
+			</div>
+			<div class="user_help">
+				<a href="#"><img src="../../assets/ic-help-outline-24-px-copy-3.png"></a>
+			</div>			       
+	    </div>	
+	</div>
+	</div>
+	</div>
+	</header>
+	<router-outlet></router-outlet>

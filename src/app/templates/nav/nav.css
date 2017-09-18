@@ -1,0 +1,137 @@
+
+
+body {
+	margin: 0px;
+}
+.header{
+	
+	
+	margin: auto;
+	background: #222222;
+}
+
+.menu {
+	display: inline-block;
+}
+
+.logo {
+	width: 75px;
+    margin-left: 40px;
+    margin-right: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 52px;
+    float: left;
+}
+
+.logo a {
+	font-family: "PT Sans";
+    text-decoration: none;
+	font-size: 24px;
+	color: #ffffff;	
+	letter-spacing: 1px;
+}
+
+.menu_item {
+	display: inline-block;
+    vertical-align: middle;
+    margin-right: 35px;
+    line-height: 55px;
+    color: #999999;
+    font-family: "PT Sans";
+    text-decoration: none;
+    font-size: 16px;
+    transition: all .3s;
+}
+
+.menu_item:hover {
+	color: #ff6633;
+	text-decoration: none;
+}
+
+.menu_item:focus {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu_item__active{
+	color: #ffffff;
+}
+
+.user {
+	
+	display: inline-block;
+	width: 455px;
+	vertical-align: middle;
+    line-height: 55px;
+
+}
+
+.user_balance {
+	color: #999999;
+    font-family: "PT Sans";
+    text-decoration: none;
+    font-size: 16px;
+    float: left;
+}
+
+.user_balance a {
+	color: #ffffff;
+    font-family: "PT Sans";
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.user_balance a:after { content:'\20BD'; }
+
+.user_notification {
+	float: left;
+	margin: 0px 15px 0 20px;
+	vertical-align: middle;
+    line-height: 55px;
+	
+}
+
+.user_notification::after {
+	content: "\25cf";
+      font-size: 12px; 
+      color: #ff6633;
+      position: relative;
+    top: -7px;
+    left: -10px;
+}
+.user_name {
+	color: #999999;
+    font-family: "PT Sans";
+    text-decoration: none;
+    font-size: 16px;
+    float: left;
+}
+
+.user_name a {
+	color: #ffffff;
+    font-family: "PT Sans";
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+.user_name a::after {
+	content: "\25be";
+      font-size: 16px; 
+      color: #999999;
+     transition: all .3s;
+}
+
+.user_name a:hover::after {
+	color: #ff6633;
+}
+
+.user_help {
+	float: left;
+	margin: 0px 25px 0 20px;
+	vertical-align: middle;
+    line-height: 55px;
+	
+}
+

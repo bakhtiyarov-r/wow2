@@ -1,0 +1,73 @@
+	<section>
+	<div class="container">
+	  <div class="row">
+	  	<div class="col-lg-1">
+	  	<div class="title">
+	  	  <h2 >Задания</h2>
+	  	</div>
+	  	</div>
+	  </div>
+	  <div class="row divider">
+	  	<div class="col-lg-10">
+	  	<div class="status">
+	  		<span class="status_item" href="#" >Новые <span class="status_count" >&nbsp;{{getCount("new")}}&nbsp;</span></span>
+		    <span class="status_item"  href="#">В работе <span class="status_count">&nbsp;{{getCount("onthe_go")}}&nbsp;</span></span>
+		    <span class="status_item"  href="#">На рассмотрении <span class="status_count">&nbsp;{{getCount("under_consideration")}}&nbsp;</span></span>
+		    <span class="status_item"  href="#">Выполнены <span class="status_count">&nbsp;{{getCount("done")}}&nbsp;</span></span>
+		    <span class="status_item"  href="#">Отменены <span class="status_count">&nbsp;{{getCount("canceled")}}&nbsp;</span></span>
+		    <span class="status_item"  href="#">Черновики <span class="status_count">&nbsp;{{getCount("drafts")}}&nbsp;</span></span>
+		</div>
+		</div>
+		<div class="col-lg-2">
+			<div class="status_add"><a href="#"></a></div>
+		</div>
+	  </div>	
+	</div>		
+	</section>
+	<section>
+	   <div class="container filter">
+	      <div class="row">
+	         <div class="col-lg-3">
+	            <div class="filter_search">
+	         	<input type="text" [(ngModel)]="search" name="search"  placeholder="Поиск по слову">
+	         	</div>
+	         </div>
+	         <div class="col-lg-6">
+	            <div class="filter_checkbox">
+	            <input type="checkbox"  [(ngModel)]="val" hidden /><label> Персональное</label>
+	            <input type="checkbox" [(ngModel)]="val1" hidden /><label> Ночное</label>
+	            <input type="checkbox" [(ngModel)]="val2" hidden/><label> Срочное</label>	            
+	            </div>     	
+	            <div class="filter_name">
+				  <a href="#" >Никита Ласточкин&nbsp;&nbsp;</a>
+			    </div>
+	         </div>  	
+	      </div>  	
+	   </div>	
+	</section>
+
+	<section>
+		<div class="container tasks">
+			<table class="table tasks_item">
+            <thead>
+                <tr >
+                    <th>ID</th>
+                    <th >Город</th>
+                    <th>Название</th>
+                    <th>Выполнить до</th>
+                    <th>Сумма</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let task of tasks | personal: val | night: val1 | immediate: val2 | filter: search">
+                    <td >{{task?.ID}}</td>
+                    <td >{{task?.city_name}}</td>
+                    <td width="50%">{{task?.task_name}}</td>
+                    <td>{{task?.deadline}}</td>
+                    <td>{{task?.sum}}</td>
+                </tr>
+                
+            </tbody>
+        </table>
+		</div>
+	</section>
